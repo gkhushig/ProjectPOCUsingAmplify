@@ -1,0 +1,66 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-projectpoc-dev-145353-authRole",
+      "UnauthRoleArn": "arn:aws:iam::991775105666:role/amplify-projectpoc-dev-145353-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::991775105666:role/amplify-projectpoc-dev-145353-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+      "UnauthRoleName": "amplify-projectpoc-dev-145353-unauthRole",
+      "StackName": "amplify-projectpoc-dev-145353",
+      "StackId": "arn:aws:cloudformation:us-east-2:991775105666:stack/amplify-projectpoc-dev-145353/6d511310-d2ca-11ed-8ef8-021e082251e6",
+      "AmplifyAppId": "dhmizfcqsq3pt",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "searchKeyInCombinedJson": {
+          "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+          "s3Key": "amplify-builds/searchKeyInCombinedJson-374d3443696e71653539-build.zip"
+        },
+        "downloadLinksForModelsFromS3": {
+          "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+          "s3Key": "amplify-builds/downloadLinksForModelsFromS3-3233326846564f6e484f-build.zip"
+        },
+        "getModelPathFromID": {
+          "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+          "s3Key": "amplify-builds/getModelPathFromID-6c74616f2f4564363450-build.zip"
+        },
+        "downloadLinksForImagesFromS3": {
+          "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+          "s3Key": "amplify-builds/downloadLinksForImagesFromS3-33702b38673151325762-build.zip"
+        },
+        "getRedirectedToShop": {
+          "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+          "s3Key": "amplify-builds/getRedirectedToShop-78666f776d584a453175-build.zip"
+        },
+        "readDataFromDynamoDB": {
+          "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+          "s3Key": "amplify-builds/readDataFromDynamoDB-556b4b4b73754b573330-build.zip"
+        },
+        "getModelIDFromSelectedName": {
+          "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+          "s3Key": "amplify-builds/getModelIDFromSelectedName-574a454e5159784b7167-build.zip"
+        }
+      },
+      "auth": {
+        "projectpoc": {}
+      },
+      "api": {
+        "searchKeyInCombinedJsonAPI": {},
+        "downloadLinksForModelsFromS3API": {},
+        "getModelPathFromIDAPI": {},
+        "downloadLinksForImagesFromS3API": {},
+        "getRedirectedToShopAPI": {},
+        "readDataFromDynamoDBAPI": {},
+        "getModelIDFromSelectedNameAPI": {}
+      },
+      "storage": {
+        "projectpoc1294f456": {
+          "bucketName": "serving3dmodels",
+          "region": "us-east-2"
+        }
+      }
+    }
+  }
+}
