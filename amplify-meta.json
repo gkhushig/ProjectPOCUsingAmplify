@@ -1,0 +1,435 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-projectpoc-dev-145353-authRole",
+      "UnauthRoleArn": "arn:aws:iam::991775105666:role/amplify-projectpoc-dev-145353-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::991775105666:role/amplify-projectpoc-dev-145353-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+      "UnauthRoleName": "amplify-projectpoc-dev-145353-unauthRole",
+      "StackName": "amplify-projectpoc-dev-145353",
+      "StackId": "arn:aws:cloudformation:us-east-2:991775105666:stack/amplify-projectpoc-dev-145353/6d511310-d2ca-11ed-8ef8-021e082251e6",
+      "AmplifyAppId": "dhmizfcqsq3pt",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    }
+  },
+  "function": {
+    "searchKeyInCombinedJson": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "lastBuildTimeStamp": "2023-04-04T18:39:13.167Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-04T18:39:14.271Z",
+      "distZipFilename": "searchKeyInCombinedJson-374d3443696e71653539-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+        "s3Key": "amplify-builds/searchKeyInCombinedJson-374d3443696e71653539-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/function/searchKeyInCombinedJson-cloudformation-template.json",
+        "logicalId": "functionsearchKeyInCombinedJson"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.073Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::991775105666:role/projectpocLambdaRolebd97a122-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:991775105666:function:searchKeyInCombinedJson-dev",
+        "Name": "searchKeyInCombinedJson-dev",
+        "LambdaExecutionRole": "projectpocLambdaRolebd97a122-dev"
+      },
+      "lastPushDirHash": "QHNcy7LBkCZfI+RY/yQHNkyrOU0="
+    },
+    "downloadLinksForModelsFromS3": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-04-11T10:49:18.810Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-11T10:49:20.278Z",
+      "distZipFilename": "downloadLinksForModelsFromS3-3233326846564f6e484f-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+        "s3Key": "amplify-builds/downloadLinksForModelsFromS3-3233326846564f6e484f-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/function/downloadLinksForModelsFromS3-cloudformation-template.json",
+        "logicalId": "functiondownloadLinksForModelsFromS3"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.074Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::991775105666:role/projectpocLambdaRolecee81a93-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:991775105666:function:downloadLinksForModelsFromS3-dev",
+        "Name": "downloadLinksForModelsFromS3-dev",
+        "LambdaExecutionRole": "projectpocLambdaRolecee81a93-dev"
+      },
+      "lastPushDirHash": "O5mLg73+Nn7uVdcjjyW8L7a8SJc="
+    },
+    "getModelPathFromID": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-04-04T18:52:29.570Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-04T18:52:32.127Z",
+      "distZipFilename": "getModelPathFromID-6c74616f2f4564363450-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+        "s3Key": "amplify-builds/getModelPathFromID-6c74616f2f4564363450-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/function/getModelPathFromID-cloudformation-template.json",
+        "logicalId": "functiongetModelPathFromID"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.076Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::991775105666:role/projectpocLambdaRole92ad8495-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:991775105666:function:getModelPathFromID-dev",
+        "Name": "getModelPathFromID-dev",
+        "LambdaExecutionRole": "projectpocLambdaRole92ad8495-dev"
+      },
+      "lastPushDirHash": "nmWBP/w1/iXZZvHcvRpA6H774Xs="
+    },
+    "downloadLinksForImagesFromS3": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-04-04T18:34:12.216Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-04T18:34:14.230Z",
+      "distZipFilename": "downloadLinksForImagesFromS3-33702b38673151325762-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+        "s3Key": "amplify-builds/downloadLinksForImagesFromS3-33702b38673151325762-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/function/downloadLinksForImagesFromS3-cloudformation-template.json",
+        "logicalId": "functiondownloadLinksForImagesFromS3"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.077Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::991775105666:role/projectpocLambdaRoled2c02bb3-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:991775105666:function:downloadLinksForImagesFromS3-dev",
+        "Name": "downloadLinksForImagesFromS3-dev",
+        "LambdaExecutionRole": "projectpocLambdaRoled2c02bb3-dev"
+      },
+      "lastPushDirHash": "PDVvDd/HpVyjjdIf2Bt5ZcL5U7Q="
+    },
+    "getRedirectedToShop": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-04-12T07:08:47.286Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-12T07:08:48.588Z",
+      "distZipFilename": "getRedirectedToShop-78666f776d584a453175-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+        "s3Key": "amplify-builds/getRedirectedToShop-78666f776d584a453175-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/function/getRedirectedToShop-cloudformation-template.json",
+        "logicalId": "functiongetRedirectedToShop"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:22.542Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::991775105666:role/projectpocLambdaRole5cec677f-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:991775105666:function:getRedirectedToShop-dev",
+        "Name": "getRedirectedToShop-dev",
+        "LambdaExecutionRole": "projectpocLambdaRole5cec677f-dev"
+      },
+      "lastPushDirHash": "RTG04JGXrotXceLtXpVX9RhiD34="
+    },
+    "readDataFromDynamoDB": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-04-11T16:37:10.519Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-11T16:37:11.734Z",
+      "distZipFilename": "readDataFromDynamoDB-556b4b4b73754b573330-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+        "s3Key": "amplify-builds/readDataFromDynamoDB-556b4b4b73754b573330-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/function/readDataFromDynamoDB-cloudformation-template.json",
+        "logicalId": "functionreadDataFromDynamoDB"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.081Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::991775105666:role/projectpocLambdaRole2b6714eb-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:991775105666:function:readDataFromDynamoDB-dev",
+        "Name": "readDataFromDynamoDB-dev",
+        "LambdaExecutionRole": "projectpocLambdaRole2b6714eb-dev"
+      },
+      "lastPushDirHash": "/dYwqQLMj2sbbTudvhiombG5MqQ="
+    },
+    "getModelIDFromSelectedName": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-04-11T10:18:22.404Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-04-11T10:18:23.672Z",
+      "distZipFilename": "getModelIDFromSelectedName-574a454e5159784b7167-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-projectpoc-dev-145353-deployment",
+        "s3Key": "amplify-builds/getModelIDFromSelectedName-574a454e5159784b7167-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/function/getModelIDFromSelectedName-cloudformation-template.json",
+        "logicalId": "functiongetModelIDFromSelectedName"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.082Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::991775105666:role/projectpocLambdaRoleb0287cba-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:991775105666:function:getModelIDFromSelectedName-dev",
+        "Name": "getModelIDFromSelectedName-dev",
+        "LambdaExecutionRole": "projectpocLambdaRoleb0287cba-dev"
+      },
+      "lastPushDirHash": "6nt7QZFC1a+3su7aC7io1W7hC7M="
+    }
+  },
+  "auth": {
+    "projectpoc": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/auth/projectpoc-cloudformation-template.json",
+        "logicalId": "authprojectpoc"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.084Z",
+      "output": {
+        "UserPoolId": "us-east-2_0m0jDvm5U",
+        "AppClientIDWeb": "77ikc3u8gd76skqrah0etcqohc",
+        "AppClientID": "e5utfvp41pslffmlf4iq5fp91",
+        "IdentityPoolId": "us-east-2:4aa983f3-fbf9-4235-adee-55900ffc9df2",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:991775105666:userpool/us-east-2_0m0jDvm5U",
+        "IdentityPoolName": "projectpoc_identitypool_66a11409__dev",
+        "UserPoolName": "projectpoc_userpool_66a11409",
+        "HostedUIDomain": "projectpoc3c5c2ff7-3c5c2ff7-dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"projectPOCUsingAmplify://\"],\"LogoutURLs\":[\"projectPOCUsingAmplify://\"]}"
+      },
+      "lastPushDirHash": "tMBy4ewk52RqmRHIp/2nohT6/Ew=",
+      "customAuth": false
+    }
+  },
+  "api": {
+    "searchKeyInCombinedJsonAPI": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "searchKeyInCombinedJson",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/api/searchKeyInCombinedJsonAPI-cloudformation-template.json",
+        "logicalId": "apisearchKeyInCombinedJsonAPI"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.087Z",
+      "output": {
+        "ApiName": "searchKeyInCombinedJsonAPI",
+        "RootUrl": "https://49yy32nea7.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "49yy32nea7"
+      },
+      "lastPushDirHash": "n5GK0ddCuzyM2YkFLvf+kpkBHQo="
+    },
+    "downloadLinksForModelsFromS3API": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "downloadLinksForModelsFromS3",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/api/downloadLinksForModelsFromS3API-cloudformation-template.json",
+        "logicalId": "apidownloadLinksForModelsFromS3API"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.088Z",
+      "output": {
+        "ApiName": "downloadLinksForModelsFromS3API",
+        "RootUrl": "https://n9s4pthu41.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "n9s4pthu41"
+      },
+      "lastPushDirHash": "Q16qjTJ28MBUzDDzTAmOCSD3sBA="
+    },
+    "getModelPathFromIDAPI": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "getModelPathFromID",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/api/getModelPathFromIDAPI-cloudformation-template.json",
+        "logicalId": "apigetModelPathFromIDAPI"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.089Z",
+      "output": {
+        "ApiName": "getModelPathFromIDAPI",
+        "RootUrl": "https://g40prdwhk7.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "g40prdwhk7"
+      },
+      "lastPushDirHash": "rS3/UdTO9QtlUUWu8BJQakWJrtw="
+    },
+    "downloadLinksForImagesFromS3API": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "downloadLinksForImagesFromS3",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/api/downloadLinksForImagesFromS3API-cloudformation-template.json",
+        "logicalId": "apidownloadLinksForImagesFromS3API"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.091Z",
+      "output": {
+        "ApiName": "downloadLinksForImagesFromS3API",
+        "RootUrl": "https://nbf6j45wz0.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "nbf6j45wz0"
+      },
+      "lastPushDirHash": "6IrPzZo5bv3BjoU2zQNuE3wDEE4="
+    },
+    "getRedirectedToShopAPI": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "getRedirectedToShop",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/api/getRedirectedToShopAPI-cloudformation-template.json",
+        "logicalId": "apigetRedirectedToShopAPI"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.092Z",
+      "output": {
+        "ApiName": "getRedirectedToShopAPI",
+        "RootUrl": "https://54vgd8jitb.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "54vgd8jitb"
+      },
+      "lastPushDirHash": "ca++kjq1GTMNW0ciPuEkQ/2QaIk="
+    },
+    "readDataFromDynamoDBAPI": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "readDataFromDynamoDB",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/api/readDataFromDynamoDBAPI-cloudformation-template.json",
+        "logicalId": "apireadDataFromDynamoDBAPI"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.093Z",
+      "output": {
+        "ApiName": "readDataFromDynamoDBAPI",
+        "RootUrl": "https://6v63eisjm1.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "6v63eisjm1"
+      },
+      "lastPushDirHash": "r4s9BrG/rkHyArIy8elkwWBtcCc="
+    },
+    "getModelIDFromSelectedNameAPI": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "getModelIDFromSelectedName",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-projectpoc-dev-145353-deployment/amplify-cfn-templates/api/getModelIDFromSelectedNameAPI-cloudformation-template.json",
+        "logicalId": "apigetModelIDFromSelectedNameAPI"
+      },
+      "lastPushTimeStamp": "2023-04-12T07:10:21.095Z",
+      "output": {
+        "ApiName": "getModelIDFromSelectedNameAPI",
+        "RootUrl": "https://nk4b3f7ypi.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "nk4b3f7ypi"
+      },
+      "lastPushDirHash": "2NKciKisU4tw3wzExX4ca5f/K+U="
+    }
+  },
+  "storage": {
+    "projectpoc1294f456": {
+      "service": "S3",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "BucketName": "serving3dmodels",
+        "Region": "us-east-2"
+      },
+      "lastPushTimeStamp": "2023-04-10T12:02:30.133Z"
+    }
+  }
+}

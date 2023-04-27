@@ -1,0 +1,304 @@
+{
+  "api": {
+    "downloadLinksForImagesFromS3API": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "downloadLinksForImagesFromS3"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "downloadLinksForModelsFromS3API": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "downloadLinksForModelsFromS3"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "getModelIDFromSelectedNameAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getModelIDFromSelectedName"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "getModelPathFromIDAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getModelPathFromID"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "getRedirectedToShopAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getRedirectedToShop"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "readDataFromDynamoDBAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "readDataFromDynamoDB"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "searchKeyInCombinedJsonAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "searchKeyInCombinedJson"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "projectpoc": {
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "managed"
+    }
+  },
+  "function": {
+    "downloadLinksForImagesFromS3": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "downloadLinksForModelsFromS3": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getModelIDFromSelectedName": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getModelPathFromID": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getRedirectedToShop": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "readDataFromDynamoDB": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "searchKeyInCombinedJson": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_downloadLinksForImagesFromS3_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "downloadLinksForImagesFromS3"
+        }
+      ]
+    },
+    "AMPLIFY_function_downloadLinksForImagesFromS3_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "downloadLinksForImagesFromS3"
+        }
+      ]
+    },
+    "AMPLIFY_function_downloadLinksForModelsFromS3_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "downloadLinksForModelsFromS3"
+        }
+      ]
+    },
+    "AMPLIFY_function_downloadLinksForModelsFromS3_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "downloadLinksForModelsFromS3"
+        }
+      ]
+    },
+    "AMPLIFY_function_getModelIDFromSelectedName_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getModelIDFromSelectedName"
+        }
+      ]
+    },
+    "AMPLIFY_function_getModelIDFromSelectedName_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getModelIDFromSelectedName"
+        }
+      ]
+    },
+    "AMPLIFY_function_getModelPathFromID_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getModelPathFromID"
+        }
+      ]
+    },
+    "AMPLIFY_function_getModelPathFromID_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getModelPathFromID"
+        }
+      ]
+    },
+    "AMPLIFY_function_getRedirectedToShop_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getRedirectedToShop"
+        }
+      ]
+    },
+    "AMPLIFY_function_getRedirectedToShop_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getRedirectedToShop"
+        }
+      ]
+    },
+    "AMPLIFY_function_readDataFromDynamoDB_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "readDataFromDynamoDB"
+        }
+      ]
+    },
+    "AMPLIFY_function_readDataFromDynamoDB_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "readDataFromDynamoDB"
+        }
+      ]
+    },
+    "AMPLIFY_function_searchKeyInCombinedJson_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "searchKeyInCombinedJson"
+        }
+      ]
+    },
+    "AMPLIFY_function_searchKeyInCombinedJson_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "searchKeyInCombinedJson"
+        }
+      ]
+    },
+    "AMPLIFY_storage_projectpoc1294f456_bucketName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "projectpoc1294f456"
+        }
+      ]
+    },
+    "AMPLIFY_storage_projectpoc1294f456_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "projectpoc1294f456"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "projectpoc1294f456": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "serviceType": "imported"
+    }
+  }
+}
