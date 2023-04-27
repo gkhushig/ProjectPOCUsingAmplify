@@ -1,24 +1,64 @@
 {
-  "version": 1,
-  "paths": {
-    "/items": {
-      "name": "/items",
-      "lambdaFunction": "searchKeyInCombinedJson",
-      "permissions": {
-        "setting": "protected",
-        "auth": [
-          "create",
-          "read",
-          "update",
-          "delete"
-        ],
-        "guest": [
-          "create",
-          "read",
-          "update",
-          "delete"
-        ]
-      }
-    }
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "projectpoc_identitypool_66a11409",
+    "allowUnauthenticatedIdentities": true,
+    "resourceNameTruncated": "projec66a11409",
+    "userPoolName": "projectpoc_userpool_66a11409",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "projec66a11409_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "projectpoc",
+    "sharedId": "66a11409",
+    "serviceName": "Cognito",
+    "useDefault": "defaultSocial",
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "useEnabledMfas": true,
+    "dependsOn": [],
+    "hostedUI": true,
+    "hostedUIDomainName": "projectpoc3c5c2ff7-3c5c2ff7",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"projectPOCUsingAmplify://\"],\"LogoutURLs\":[\"projectPOCUsingAmplify://\"]}",
+    "userPoolGroupList": [],
+    "authProviders": []
   }
 }
