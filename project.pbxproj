@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C1F337429F697BD0001A1A3 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F337329F697BD0001A1A3 /* Global.swift */; };
+		4C3631DA29E0477600262AAE /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3631D929E0477600262AAE /* GLTFSceneKit */; };
+		4C3FE1A629E0495200D6CD39 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3FE1A529E0495200D6CD39 /* SecondVC.swift */; };
+		4C3FE1AC29E04E6A00D6CD39 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3FE1AB29E04E6A00D6CD39 /* StartView.swift */; };
+		4C77955D29EFE02F0070EDE4 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77955C29EFE02F0070EDE4 /* ThirdVC.swift */; };
+		4C77955F29EFF4BC0070EDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C77955E29EFF4BC0070EDE4 /* ViewController.swift */; };
+		4CBC6B8029DC21CD0075ACED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC6B7F29DC21CD0075ACED /* AppDelegate.swift */; };
+		4CBC6B8229DC21CD0075ACED /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC6B8129DC21CD0075ACED /* art.scnassets */; };
+		4CBC6B8429DC21CD0075ACED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC6B8329DC21CD0075ACED /* GameViewController.swift */; };
+		4CBC6B8729DC21CD0075ACED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC6B8529DC21CD0075ACED /* Main.storyboard */; };
+		4CBC6B8929DC21CE0075ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC6B8829DC21CE0075ACED /* Assets.xcassets */; };
+		4CBC6B8C29DC21CE0075ACED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC6B8A29DC21CE0075ACED /* LaunchScreen.storyboard */; };
+		4CBC6B9429DC22470075ACED /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBC6B9329DC22470075ACED /* AWSAPIPlugin */; };
+		4CBC6B9629DC22470075ACED /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBC6B9529DC22470075ACED /* AWSCognitoAuthPlugin */; };
+		4CBC6B9829DC22470075ACED /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBC6B9729DC22470075ACED /* AWSDataStorePlugin */; };
+		4CBC6B9A29DC22470075ACED /* AWSLocationGeoPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBC6B9929DC22470075ACED /* AWSLocationGeoPlugin */; };
+		4CBC6B9C29DC22470075ACED /* AWSPinpointAnalyticsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBC6B9B29DC22470075ACED /* AWSPinpointAnalyticsPlugin */; };
+		4CBC6B9E29DC22470075ACED /* AWSPinpointPushNotificationsPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBC6B9D29DC22470075ACED /* AWSPinpointPushNotificationsPlugin */; };
+		4CBC6BA029DC22470075ACED /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBC6B9F29DC22470075ACED /* AWSPluginsCore */; };
+		4CBC6BA229DC22470075ACED /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBC6BA129DC22470075ACED /* AWSS3StoragePlugin */; };
+		4CBC6BA429DC22470075ACED /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBC6BA329DC22470075ACED /* Amplify */; };
+		4CBC6BE329DD41130075ACED /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC6BE229DD41130075ACED /* SignUpView.swift */; };
+		4CBC6BE529DD411C0075ACED /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC6BE429DD411C0075ACED /* LoginView.swift */; };
+		4CBC6BE729DD412B0075ACED /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC6BE629DD412B0075ACED /* SignOut.swift */; };
+		4CBC6BE929DD42040075ACED /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC6BE829DD42040075ACED /* FirstVC.swift */; };
+		4CBC6BEB29DD61350075ACED /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC6BEA29DD61350075ACED /* SessionManager.swift */; };
+		4CBC6BED29DD63C40075ACED /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC6BEC29DD63C40075ACED /* ConfirmationView.swift */; };
+		4CBC6BEF29DD63D30075ACED /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC6BEE29DD63D30075ACED /* SessionView.swift */; };
+		83E174CEA72A6B0108B05EBE /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 8676427645CC60473FAED0FE /* awsconfiguration.json */; };
+		F1F32C1B7147D66286FA3A3F /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CF15171119427B185B2FF8A /* amplifyconfiguration.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C1F337329F697BD0001A1A3 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		4C3631D629E0419700262AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3FE1A529E0495200D6CD39 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		4C3FE1AB29E04E6A00D6CD39 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		4C77955C29EFE02F0070EDE4 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		4C77955E29EFF4BC0070EDE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CBC6B7C29DC21CD0075ACED /* ProjectPOCUsingAmplify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPOCUsingAmplify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBC6B7F29DC21CD0075ACED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CBC6B8129DC21CD0075ACED /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		4CBC6B8329DC21CD0075ACED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4CBC6B8629DC21CD0075ACED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CBC6B8829DC21CE0075ACED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CBC6B8B29DC21CE0075ACED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CBC6BA529DC3F850075ACED /* ProjectPOCUsingAmplify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectPOCUsingAmplify.entitlements; sourceTree = "<group>"; };
+		4CBC6BE229DD41130075ACED /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4CBC6BE429DD411C0075ACED /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4CBC6BE629DD412B0075ACED /* SignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOut.swift; sourceTree = "<group>"; };
+		4CBC6BE829DD42040075ACED /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		4CBC6BEA29DD61350075ACED /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		4CBC6BEC29DD63C40075ACED /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		4CBC6BEE29DD63D30075ACED /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		6CF15171119427B185B2FF8A /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		8676427645CC60473FAED0FE /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CBC6B7929DC21CD0075ACED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBC6BA429DC22470075ACED /* Amplify in Frameworks */,
+				4CBC6B9829DC22470075ACED /* AWSDataStorePlugin in Frameworks */,
+				4CBC6BA029DC22470075ACED /* AWSPluginsCore in Frameworks */,
+				4C3631DA29E0477600262AAE /* GLTFSceneKit in Frameworks */,
+				4CBC6B9E29DC22470075ACED /* AWSPinpointPushNotificationsPlugin in Frameworks */,
+				4CBC6B9429DC22470075ACED /* AWSAPIPlugin in Frameworks */,
+				4CBC6B9C29DC22470075ACED /* AWSPinpointAnalyticsPlugin in Frameworks */,
+				4CBC6B9A29DC22470075ACED /* AWSLocationGeoPlugin in Frameworks */,
+				4CBC6B9629DC22470075ACED /* AWSCognitoAuthPlugin in Frameworks */,
+				4CBC6BA229DC22470075ACED /* AWSS3StoragePlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C3FE1AA29E04DC100D6CD39 /* SignIN-SIgnOut */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC6BEC29DD63C40075ACED /* ConfirmationView.swift */,
+				4CBC6BE229DD41130075ACED /* SignUpView.swift */,
+				4CBC6BE829DD42040075ACED /* FirstVC.swift */,
+				4CBC6BEE29DD63D30075ACED /* SessionView.swift */,
+				4CBC6BE629DD412B0075ACED /* SignOut.swift */,
+				4CBC6BE429DD411C0075ACED /* LoginView.swift */,
+				4CBC6BEA29DD61350075ACED /* SessionManager.swift */,
+			);
+			path = "SignIN-SIgnOut";
+			sourceTree = "<group>";
+		};
+		4CBC6B7329DC21CD0075ACED = {
+			isa = PBXGroup;
+			children = (
+				4CBC6B7E29DC21CD0075ACED /* ProjectPOCUsingAmplify */,
+				4CBC6B7D29DC21CD0075ACED /* Products */,
+				B9F9972F3A3458B5DB07514E /* AmplifyConfig */,
+			);
+			sourceTree = "<group>";
+		};
+		4CBC6B7D29DC21CD0075ACED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC6B7C29DC21CD0075ACED /* ProjectPOCUsingAmplify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CBC6B7E29DC21CD0075ACED /* ProjectPOCUsingAmplify */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC6BA529DC3F850075ACED /* ProjectPOCUsingAmplify.entitlements */,
+				4C3631D629E0419700262AAE /* Info.plist */,
+				4CBC6B8129DC21CD0075ACED /* art.scnassets */,
+				4CBC6B7F29DC21CD0075ACED /* AppDelegate.swift */,
+				4C3FE1AB29E04E6A00D6CD39 /* StartView.swift */,
+				4CBC6B8329DC21CD0075ACED /* GameViewController.swift */,
+				4C1F337329F697BD0001A1A3 /* Global.swift */,
+				4C3FE1A529E0495200D6CD39 /* SecondVC.swift */,
+				4C77955E29EFF4BC0070EDE4 /* ViewController.swift */,
+				4C77955C29EFE02F0070EDE4 /* ThirdVC.swift */,
+				4CBC6B8829DC21CE0075ACED /* Assets.xcassets */,
+				4CBC6B8A29DC21CE0075ACED /* LaunchScreen.storyboard */,
+				4CBC6B8529DC21CD0075ACED /* Main.storyboard */,
+				4C3FE1AA29E04DC100D6CD39 /* SignIN-SIgnOut */,
+			);
+			path = ProjectPOCUsingAmplify;
+			sourceTree = "<group>";
+		};
+		B9F9972F3A3458B5DB07514E /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				8676427645CC60473FAED0FE /* awsconfiguration.json */,
+				6CF15171119427B185B2FF8A /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CBC6B7B29DC21CD0075ACED /* ProjectPOCUsingAmplify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBC6B8F29DC21CE0075ACED /* Build configuration list for PBXNativeTarget "ProjectPOCUsingAmplify" */;
+			buildPhases = (
+				4CBC6B7829DC21CD0075ACED /* Sources */,
+				4CBC6B7929DC21CD0075ACED /* Frameworks */,
+				4CBC6B7A29DC21CD0075ACED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjectPOCUsingAmplify;
+			packageProductDependencies = (
+				4CBC6B9329DC22470075ACED /* AWSAPIPlugin */,
+				4CBC6B9529DC22470075ACED /* AWSCognitoAuthPlugin */,
+				4CBC6B9729DC22470075ACED /* AWSDataStorePlugin */,
+				4CBC6B9929DC22470075ACED /* AWSLocationGeoPlugin */,
+				4CBC6B9B29DC22470075ACED /* AWSPinpointAnalyticsPlugin */,
+				4CBC6B9D29DC22470075ACED /* AWSPinpointPushNotificationsPlugin */,
+				4CBC6B9F29DC22470075ACED /* AWSPluginsCore */,
+				4CBC6BA129DC22470075ACED /* AWSS3StoragePlugin */,
+				4CBC6BA329DC22470075ACED /* Amplify */,
+				4C3631D929E0477600262AAE /* GLTFSceneKit */,
+			);
+			productName = ProjectPOCUsingAmplify;
+			productReference = 4CBC6B7C29DC21CD0075ACED /* ProjectPOCUsingAmplify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CBC6B7429DC21CD0075ACED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4CBC6B7B29DC21CD0075ACED = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4CBC6B7729DC21CD0075ACED /* Build configuration list for PBXProject "ProjectPOCUsingAmplify" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CBC6B7329DC21CD0075ACED;
+			packageReferences = (
+				4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				4C3631D829E0477600262AAE /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
+			);
+			productRefGroup = 4CBC6B7D29DC21CD0075ACED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CBC6B7B29DC21CD0075ACED /* ProjectPOCUsingAmplify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CBC6B7A29DC21CD0075ACED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBC6B8229DC21CD0075ACED /* art.scnassets in Resources */,
+				4CBC6B8C29DC21CE0075ACED /* LaunchScreen.storyboard in Resources */,
+				4CBC6B8929DC21CE0075ACED /* Assets.xcassets in Resources */,
+				4CBC6B8729DC21CD0075ACED /* Main.storyboard in Resources */,
+				83E174CEA72A6B0108B05EBE /* awsconfiguration.json in Resources */,
+				F1F32C1B7147D66286FA3A3F /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CBC6B7829DC21CD0075ACED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBC6B8429DC21CD0075ACED /* GameViewController.swift in Sources */,
+				4CBC6BE929DD42040075ACED /* FirstVC.swift in Sources */,
+				4CBC6BE729DD412B0075ACED /* SignOut.swift in Sources */,
+				4C3FE1AC29E04E6A00D6CD39 /* StartView.swift in Sources */,
+				4C1F337429F697BD0001A1A3 /* Global.swift in Sources */,
+				4CBC6BE329DD41130075ACED /* SignUpView.swift in Sources */,
+				4CBC6B8029DC21CD0075ACED /* AppDelegate.swift in Sources */,
+				4CBC6BED29DD63C40075ACED /* ConfirmationView.swift in Sources */,
+				4C3FE1A629E0495200D6CD39 /* SecondVC.swift in Sources */,
+				4C77955F29EFF4BC0070EDE4 /* ViewController.swift in Sources */,
+				4C77955D29EFE02F0070EDE4 /* ThirdVC.swift in Sources */,
+				4CBC6BE529DD411C0075ACED /* LoginView.swift in Sources */,
+				4CBC6BEF29DD63D30075ACED /* SessionView.swift in Sources */,
+				4CBC6BEB29DD61350075ACED /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4CBC6B8529DC21CD0075ACED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBC6B8629DC21CD0075ACED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CBC6B8A29DC21CE0075ACED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBC6B8B29DC21CE0075ACED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CBC6B8D29DC21CE0075ACED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4CBC6B8E29DC21CE0075ACED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CBC6B9029DC21CE0075ACED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectPOCUsingAmplify/ProjectPOCUsingAmplify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMA5Y7SR58;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/gkhushig/Desktop/ProjectPOCUsingAmplify/ProjectPOCUsingAmplify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.ProjectPOCUsingAmplify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CBC6B9129DC21CE0075ACED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectPOCUsingAmplify/ProjectPOCUsingAmplify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HMA5Y7SR58;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/gkhushig/Desktop/ProjectPOCUsingAmplify/ProjectPOCUsingAmplify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.ProjectPOCUsingAmplify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CBC6B7729DC21CD0075ACED /* Build configuration list for PBXProject "ProjectPOCUsingAmplify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBC6B8D29DC21CE0075ACED /* Debug */,
+				4CBC6B8E29DC21CE0075ACED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBC6B8F29DC21CE0075ACED /* Build configuration list for PBXNativeTarget "ProjectPOCUsingAmplify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBC6B9029DC21CE0075ACED /* Debug */,
+				4CBC6B9129DC21CE0075ACED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C3631D829E0477600262AAE /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magicien/GLTFSceneKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+		4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C3631D929E0477600262AAE /* GLTFSceneKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C3631D829E0477600262AAE /* XCRemoteSwiftPackageReference "GLTFSceneKit" */;
+			productName = GLTFSceneKit;
+		};
+		4CBC6B9329DC22470075ACED /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		4CBC6B9529DC22470075ACED /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		4CBC6B9729DC22470075ACED /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSDataStorePlugin;
+		};
+		4CBC6B9929DC22470075ACED /* AWSLocationGeoPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSLocationGeoPlugin;
+		};
+		4CBC6B9B29DC22470075ACED /* AWSPinpointAnalyticsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPinpointAnalyticsPlugin;
+		};
+		4CBC6B9D29DC22470075ACED /* AWSPinpointPushNotificationsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPinpointPushNotificationsPlugin;
+		};
+		4CBC6B9F29DC22470075ACED /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPluginsCore;
+		};
+		4CBC6BA129DC22470075ACED /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
+		};
+		4CBC6BA329DC22470075ACED /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBC6B9229DC22470075ACED /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4CBC6B7429DC21CD0075ACED /* Project object */;
+}
